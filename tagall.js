@@ -13,7 +13,7 @@ module.exports = async function ({ conn, m, isGroup, reply, jid, sender, args })
     const message = `📝 *Message:* \`\`\`${msg}\`\`\`\n`;
     const separator = `\n╠═════『 👥 Members 』═════╣\n`;
     const mentionsList = members.map((u, i) => `🔹 ${i + 1}. @${u.split("@")[0]}`).join("\n");
-    const footer = `\n╚═════ ⧼ 𝗠𝗘𝗚𝗔𝗧𝗥𝗢𝗡 𝗕𝗢𝗧 ⚡ ⧽ ═════╝`;
+    const footer = `\n╚═════ ⧼ をRBをBALOCHを 𝗕𝗢𝗧 ⚡ ⧽ ═════╝`;
 
     const finalMessage = `${header}${by}${message}${separator}${mentionsList}${footer}`;
 
@@ -24,6 +24,6 @@ module.exports = async function ({ conn, m, isGroup, reply, jid, sender, args })
     );
   } catch (err) {
     console.error("❌ Tagall Error:", err);
-    reply("❌ Failed to tag members.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    reply("❌ Failed to tag members.\n\n> をRBをBALOCHを ❦ ✓");
   }
 };
