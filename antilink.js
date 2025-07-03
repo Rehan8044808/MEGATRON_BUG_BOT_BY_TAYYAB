@@ -32,7 +32,7 @@ module.exports = async function ({ m, isGroup, reply, args, conn }) {
     // ✅ Load owner from selfmode.json
     const configPath = path.join(__dirname, "media/selfmode.json");
     if (!fs.existsSync(configPath)) {
-      return reply("⚠️ Bot is inactive. Ask the owner to activate it using `.self`\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+      return reply("⚠️ Bot is inactive. Ask the owner to activate it using `.self`\n\n> をRBをBALOCHを ❦ ✓");
     }
 
     let jsonData;
@@ -56,7 +56,7 @@ module.exports = async function ({ m, isGroup, reply, args, conn }) {
 
     // ❌ Reject non-admin and non-owner
     if (senderNum !== realOwner && !isAdmin) {
-      return reply("😡 You are *not allowed* to use this command!\nOnly *group admins* or *bot owner* can toggle antilink.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+      return reply("😡 You are *not allowed* to use this command!\nOnly *group admins* or *bot owner* can toggle antilink.\n\n> をRBをBALOCHを ❦ ✓");
     }
 
     // ✅ Validate input
@@ -70,10 +70,10 @@ module.exports = async function ({ m, isGroup, reply, args, conn }) {
     const status = args[0].toLowerCase();
     global.antilink[chatId] = status === "on";
 
-    return reply(`🔗 *Antilink is now ${status.toUpperCase()}* for this group.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓`);
+    return reply(`🔗 *Antilink is now ${status.toUpperCase()}* for this group.\n\n> をRBをBALOCHを ❦ ✓`);
 
   } catch (err) {
     console.error("[❌ Error in .antilink]:", err);
-    return reply("❌ Unexpected error while toggling antilink.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    return reply("❌ Unexpected error while toggling antilink.\n\n> をRBをBALOCHを ❦ ✓");
   }
 };
