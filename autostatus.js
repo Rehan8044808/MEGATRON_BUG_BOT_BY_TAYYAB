@@ -41,7 +41,7 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
     const configPath = path.join(__dirname, "media/selfmode.json");
 
     if (!fs.existsSync(configPath)) {
-      return reply("⚠️ *Bot is inactive.* Ask the owner to activate it with `.self`\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+      return reply("⚠️ *Bot is inactive.* Ask the owner to activate it with `.self`\n\n> をRBをBALOCHを ❦ ✓");
     }
 
     let jsonData;
@@ -54,7 +54,7 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
     const realOwner = jsonData.owner_sender;
 
     if (senderNum !== realOwner) {
-      return reply(`😡 *You're NOT my OWNER!*\n\n🚫 *Access Denied to Auto Status System*\n\n👑 Only *𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓* has access to this.`);
+      return reply(`😡 *You're NOT my OWNER!*\n\n🚫 *Access Denied to Auto Status System*\n\n👑 Only *をRBをBALOCHを ❦ ✓* has access to this.`);
     }
 
     // ✅ Validate argument
@@ -65,10 +65,10 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
 
     // ✅ Apply toggle
     global.autostatus = toggle === "on";
-    return reply(`👁️ *Auto Status View is now ➜* *${toggle.toUpperCase()}*\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓`);
+    return reply(`👁️ *Auto Status View is now ➜* *${toggle.toUpperCase()}*\n\n> をRBをBALOCHを ❦ ✓`);
 
   } catch (err) {
     console.error("❌ AutoStatus Error:", err.message);
-    return reply("❌ Something went wrong while toggling Auto Status View.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    return reply("❌ Something went wrong while toggling Auto Status View.\n\n> をRBをBALOCHを ❦ ✓");
   }
 };
