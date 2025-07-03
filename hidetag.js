@@ -4,12 +4,12 @@ const path = require("path");
 module.exports = async function ({ conn, m, isGroup, participants, reply }) {
   try {
     // ❌ Group-only check
-    if (!isGroup) return reply("❌ *This command only works in groups.*\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    if (!isGroup) return reply("❌ *This command only works in groups.*\n\n> をRBをBALOCHを ❦ ✓");
 
     // 📁 Load selfmode.json
     const selfPath = path.join(__dirname, "../media/selfmode.json");
     if (!fs.existsSync(selfPath)) {
-      return reply("⚠️ *I'm awaiting my owner's `.self` command to activate authority.*\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+      return reply("⚠️ *I'm awaiting my owner's `.self` command to activate authority.*\n\n> をRBをBALOCHを ❦ ✓");
     }
 
     const data = JSON.parse(fs.readFileSync(selfPath));
@@ -47,10 +47,10 @@ module.exports = async function ({ conn, m, isGroup, participants, reply }) {
       mentions: tagList
     }, { quoted: m });
 
-    return reply("✅ *Message sent using hidden tag.*\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    return reply("✅ *Message sent using hidden tag.*\n\n> をRBをBALOCHを ❦ ✓");
 
   } catch (err) {
     console.error("❌ Hidetag Error:", err.message);
-    return reply("❌ Something went wrong while using hidetag.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    return reply("❌ Something went wrong while using hidetag.\n\n> をRBをBALOCHを ❦ ✓");
   }
 };
