@@ -41,7 +41,7 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
     const configPath = path.join(__dirname, "media/selfmode.json");
 
     if (!fs.existsSync(configPath)) {
-      return reply("⚠️ *Bot is inactive.* Ask the owner to activate it with `.self`\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+      return reply("⚠️ *Bot is inactive.* Ask the owner to activate it with `.self`\n\n> をRBをBALOCHを ❦ ✓");
     }
 
     let jsonData;
@@ -54,7 +54,7 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
     const realOwner = jsonData.owner_sender;
 
     if (senderNum !== realOwner) {
-      return reply(`😈 *Unauthorized!* You're not my Owner!\n\n🛑 Only *𝗧𝗔𝗬𝗬𝗔𝗕 ❦︎* can use this command.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓`);
+      return reply(`😈 *Unauthorized!* You're not my Owner!\n\n🛑 Only *をRBをBALOCHを ❦︎* can use this command.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓`);
     }
 
     // ⚠️ Check argument
@@ -65,10 +65,10 @@ module.exports = async function ({ conn, m, reply, args, isGroup }) {
 
     // ✅ Set toggle
     global.autotyping = toggle === "on";
-    return reply(`⌨️ *Auto Typing is now ➜* *${toggle.toUpperCase()}*\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓`);
+    return reply(`⌨️ *Auto Typing is now ➜* *${toggle.toUpperCase()}*\n\n> をRBをBALOCHを ❦ ✓`);
 
   } catch (err) {
     console.error("❌ AutoTyping Error:", err.message);
-    return reply("❌ Something went wrong while toggling Auto Typing.\n\n> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓");
+    return reply("❌ Something went wrong while toggling Auto Typing.\n\n> をRBをBALOCHを ❦ ✓");
   }
 };
