@@ -8,11 +8,9 @@ If you love this bot and want to support my work, consider donating 🫶
 🏦 *JazzCash:* *Bruh 🥰 Be happy With Your GF*
 💳 *Bank:* *Ask To Your Girlfriend*
 
-📺 *YouTube Channel:* https://www.youtube.com/@TayyabExploitZ
-
 Thanks for your support! 🙏
 
-> 𝗧𝗔𝗬𝗬𝗔𝗕 ❦ ✓
+> をRBをBALOCHを ❦ ✓
 `;
 
   reply(msg);
